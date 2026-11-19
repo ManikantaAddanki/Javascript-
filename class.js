@@ -44,5 +44,28 @@ while (num > 0) {
 console.log(rev);
 
 
-''
+'strong number'
+
+let strongnum = 145;
+let temp = strongnum;
+let sum = 0;
+
+while (temp > 0) {
+    let rem = temp % 10;
+    let fact = 1;
+
+    for (let i = 1; i <= rem; i++) {
+        fact = fact * i;
+    }
+
+    sum = sum + fact;
+    temp = Math.floor(temp / 10);
+}
+
+if (sum === num) {
+    console.log("Strong Number");
+} else {
+    console.log("Not a Strong Number");
+}  
+
 
